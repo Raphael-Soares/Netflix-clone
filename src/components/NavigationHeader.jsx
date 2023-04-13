@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 import { Feather } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-function Header() {
+function NavigationHeader() {
     return (
         <View style={styles.container}>
             <MaterialCommunityIcons name="netflix" size={36} color="red" />
@@ -16,7 +16,7 @@ function Header() {
     );
 }
 
-export default Header;
+export default NavigationHeader;
 const styles = StyleSheet.create({
     container: {
         flexDirection: "row",
