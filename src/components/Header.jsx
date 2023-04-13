@@ -22,10 +22,16 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "space-between",
         padding: 20,
+        position: "fixed",
+        top: 0,
+        zIndex: 1,
+        width: "100%",
+
+        backgroundColor: "transparent",
     },
     nav: {
         flexDirection: "row",
         justifyContent: "space-between",
-        width: 100,
+        width: "35%",
     },
 });
