@@ -28,7 +28,7 @@ function NavigationHeader() {
                 },
             ]}
         >
-            <MaterialCommunityIcons name="netflix" size={48} color="red" />
+            <MaterialCommunityIcons name="netflix" size={40} color="red" />
             <View style={styles.nav}>
                 <Feather name="cast" size={24} color="white" />
                 <AntDesign name="search1" size={24} color="white" />
@@ -45,6 +45,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "space-between",
         paddingHorizontal: 20,
+        paddingVertical: 5,
         position: "fixed",
         top: 0,
         zIndex: 1,

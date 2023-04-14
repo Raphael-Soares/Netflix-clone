@@ -1,17 +1,48 @@
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, Text, View, Image, FlatList, TouchableOpacity } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 
 import BannerImage from "../../assets/Banner.jpeg";
+
+const Tags = [
+    {
+        id: 1,
+        name: "Action",
+    },
+    {
+        id: 2,
+        name: "Adventure",
+    },
+    {
+        id: 3,
+        name: "Comedy",
+    },
+    {
+        id: 4,
+        name: "Crime",
+    },
+    {
+        id: 5,
+        name: "Drama",
+    },
+];
 
 function Banner() {
     return (
         <View style={styles.container}>
             <Image source={{ uri: BannerImage }} style={styles.image} />
-            {/* <Text style={styles.text}>Banner</Text> */}
+            <View style={styles.content}>
+                <FlatList
+                    data={Tags}
+                    renderItem={({ item }) => <Text style={styles.tag}>{item.name}</Text>}
+                    ItemSeparatorComponent={() => <Text> | </Text>}
+                    horizontal
+                />
+            </View>
             <LinearGradient colors={["transparent", "rgb(0, 0, 0)"]} style={styles.gradient} />
         </View>
     );
 }
+2;
 
 export default Banner;
 
@@ -27,22 +58,23 @@ const styles = StyleSheet.create({
         resizeMode: "cover",
         position: "absolute",
     },
-    text: {
-        color: "white",
+    content: {
         position: "absolute",
-        top: 20,
+        bottom: 20,
         left: 20,
-        fontSize: 24,
-        fontWeight: "bold",
-        textShadowColor: "rgba(0, 0, 0, 0.75)",
-        textShadowOffset: { width: -1, height: 1 },
-        textShadowRadius: 10,
+        right: 20,
+
         zIndex: 1,
     },
+
     gradient: {
         height: "50%",
         width: "100%",
         position: "absolute",
         bottom: 0,
+    },
+    tag: {
+        color: "white",
+        fontSize: 16,
     },
 });
