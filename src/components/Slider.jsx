@@ -24,15 +24,15 @@ const movies = [
     },
 ];
 
-function Slider() {
+function Slider({ categoria }) {
     return (
         <>
-            <Text style={styles.title}>Trending</Text>
+            <Text style={styles.title}>{categoria.categoria}</Text>
             <FlatList
                 style={styles.container}
-                data={movies}
+                data={categoria.data}
                 renderItem={({ item }) => (
-                    <Image source={{ uri: item.cover }} style={styles.image} />
+                    <Image source={{ uri: item.poster }} style={styles.image} />
                 )}
                 horizontal
                 showsHorizontalScrollIndicator={false}

@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View, FlatList } from "react-native";
 import React from "react";
 
+import { Categorias } from "./src/utils/Data";
 import Banner from "./src/components/Banner";
 import NavigationHeader from "./src/components/NavigationHeader";
 import Slider from "./src/components/Slider";
@@ -10,8 +11,8 @@ function App() {
         <View style={styles.container}>
             <NavigationHeader />
             <FlatList
-                data={[{ key: "a" }, { key: "b" }, { key: "c" }, { key: "d" }, { key: "e" }]}
-                renderItem={({ item }) => <Slider />}
+                data={Categorias}
+                renderItem={({ item }) => <Slider categoria={item} />}
                 ListHeaderComponent={<Banner />}
                 ListHeaderComponentStyle={{ height: 400, marginBottom: 10 }}
                 style={{ flex: 1 }}
