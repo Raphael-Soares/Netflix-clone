@@ -9,13 +9,13 @@ Como utilizar
 4. Baixe o aplicativo do Expo em seu smartphone e escaneie o QR Code gerado pelo servidor de desenvolvimento para abrir o aplicativo no seu dispositivo.
 5. O aplicativo será atualizado automaticamente sempre que houver uma mudança no código.
 
-##Funcionalidades
+## Funcionalidades
 
 Atualmente, o aplicativo conta com as seguintes funcionalidades:
 
 -    Tela principal: exibe uma lista de filmes e séries disponíveis, com a possibilidade de filtrar por categoria.
 
-##Limitações
+## Limitações
 
 O aplicativo ainda está em desenvolvimento e, portanto, possui algumas limitações:
 
