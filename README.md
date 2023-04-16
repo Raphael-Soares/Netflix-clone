@@ -4,7 +4,7 @@ Este é um projeto em React Native desenvolvido com o Expo que tem como objetivo
 Como utilizar
 
 1. Faça o download do repositório ou clone o mesmo em sua máquina.
-2. Abra o terminal na pasta do projeto e execute o comando npm install para instalar as dependências necessárias.
+2. Abra o terminal na pasta do projeto e execute o comando `npm install` para instalar as dependências necessárias.
 3. Execute o comando `expo start` para iniciar o servidor de desenvolvimento do Expo.
 4. Baixe o aplicativo do Expo em seu smartphone e escaneie o QR Code gerado pelo servidor de desenvolvimento para abrir o aplicativo no seu dispositivo.
 5. O aplicativo será atualizado automaticamente sempre que houver uma mudança no código.
