@@ -1,7 +1,8 @@
 ## Netflix Clone
 
 Este é um projeto em React Native desenvolvido com o Expo que tem como objetivo criar um clone da interface do aplicativo da Netflix. O projeto ainda está em desenvolvimento e tem como finalidade ajudar a aprender e praticar habilidades em React Native.
-Como utilizar
+
+## Como utilizar
 
 1. Faça o download do repositório ou clone o mesmo em sua máquina.
 2. Abra o terminal na pasta do projeto e execute o comando `npm install` para instalar as dependências necessárias.
